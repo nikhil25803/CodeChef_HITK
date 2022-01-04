@@ -1,0 +1,71 @@
+MYSTICAL ATOM 
+Problem Code: MATOM
+
+After learning different kinds of magical spells, now you are given a task to create a different atomic particle which has a different structure. 
+You somehow create the atom and its structure is explained below.
+
+The structure of the inside of the atom is in the form of a tree with n nodes numbered as 1,2,3,...n and n−1 edges between them. 
+The tree is always rooted at 1. Every node has an energy associated with it and you are given the energy for each node in the form of a1,a2,..an. 
+Initially, each node has 1 electron inside it. The amount of energy of an electron is equal to the energy associated with the node in which it is present.
+
+Now there is a transition phase in which for each node i, if its initial energy is ai, its final energy will be equal to the largest prime number less than or equal to ai.
+
+In the end, every electron would want to possess the least amount of energy. So after the transition phase.
+Each electron will make a jump from its initial node position x to any other node y satisfying these conditions :
+
+y should be in the subtree of x. Note : x also lies in the subtree of x.
+Each electron will try to have the minimum possible energy. An electron can’t make more than 1 jump.
+So, as the final task, For each electron, you have to find its final node position and the absolute difference between its energy before and after the transition phase.
+
+Note that if for an electron, if there are multiple possible final node positions, then :
+
+its final position will be the node with the least energy.
+If multiple nodes have the same minimum energy, then the node with minimum node number will be preferred.
+
+Input
+The first line contains n(1≤n≤3∗105), the number of nodes in the atom.
+The next line contains n space-separated integers a1,a2,…,an(2≤ai≤106)-th initial energy associated with each node.
+The following n−1 lines each contain two space-separated integers u and v (1≤u,v≤n,u≠v), denoting an edge from u to v.
+
+Output
+Print n lines such that each line contains 2 integers x and y, x is the final node position of each electron 
+and y is the absolute difference of the initial energy and final energy of the electron.
+
+Sample Input 1
+6
+10 12 4 11 2 2
+1 2
+1 3
+2 4
+2 5
+5 6
+
+Output 1
+5 8
+5 10
+3 1
+4 0
+5 0
+6 0
+
+Explanation
+
+
+Red lines represent the electron jumped to the most optimal node in its subtree and the electrons energy changed a/c to their respective final node energies.
+
+Blue lines represent the electron remained in its own node but had a change in energy a/c to their respective final node energies.
+
+Sample Input 2
+5
+10 10 10 10 10
+1 2
+1 4
+3 4
+4 5
+
+Output 2
+1 3
+2 3
+3 3
+3 3
+5 3

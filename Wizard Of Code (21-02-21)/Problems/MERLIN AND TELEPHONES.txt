@@ -1,0 +1,38 @@
+MERLIN AND TELEPHONES 
+Problem Code: MTEL
+
+Merlin, the young wizard working for the Ministry of Welfare of the Non-Wizarding Community, wants to start a telephone service providing business for the betterment of the non-wizarding community.
+As her first welfare scheme. 
+She is receiving orders from different cities in form of two integers a and b where the city has a telephone.
+The ministry of welfare wants that each telephone in the city is directly connected to b other telephones in the same city.
+
+You are given that one wire can connect only 2 different telephones. 
+Help Merlin find the minimum number of wires required to complete the order. 
+If order fulfillment is not possible, simply print −1.
+
+Input:
+First line will contain T, number of testcases. Then the testcases follow.
+Each testcase contains of a single line of input, two integers a,b.
+
+Output:
+For each test case print only one integer that is the number of wires required. If not possible, simply print −1.
+
+Constraints
+1≤T≤105
+0≤a,b≤109
+
+Sample Input:
+1
+5 2
+
+Sample Output:
+5
+
+EXPLANATION:
+For the first test case there are 5 telephones in the city and the ministry wants each telephone to be connected to 2 other telephones. If telephone 1 is connected with 2 and 5, telephone 2 is connected with 1 and 3, telephone 3 is connected to 4 and 2, telephone 4 is connected to 3 and 5 and telephone 5 is connected to 1 and 4.
+
+On visualizing the problem we find that we require 5 wires for the order.
+
+1_2_3
+|   |
+5___4

@@ -1,0 +1,57 @@
+TRAIN JOURNEY 
+Problem Code: TJOUR
+
+There is a train service which runs in Wonderland. Each train carries people on a fixed route. 
+As a part-time job, You are given the responsibility to manage 1 of those trains.
+
+Your train has bogies to carry the passengers and each bogie can carry not more than k passengers. 
+Initially, the train has 0 bogies. The train runs on a fixed route and there are multiple stops on the route at which some people enter the train and some leave the train.
+
+You have a list of arrival and departure stop numbers of n people who board the train. 
+Each line i of the list has 2 numbers a and b which means the ith person entered the train at ath stop and left the train at bth stop.
+
+Being a responsible manager, you have to figure out the minimum number of bogies your train should have initially such that it can accommodate all the passengers during the journey.
+
+Note that at every stop, first, the passengers who want to leave the train will exit first and then the passengers of that stop will enter the train.
+
+Input
+The first input line contains a single integer t — the number of test cases.
+The first line contains 2 integers n — the total number of people and k - the total capacity of each bogie.
+Each of the following n lines contains two integers a and b representing entry and exit stop number(respectively) of each individual.
+
+Output
+Print an integer x - the minimum number of bogies which will be sufficient to accommodate all the people.
+
+Constraints
+1<=t<=105
+1<=n<=105
+1<=k<=109
+1<=a<b<=109
+
+It is guaranteed that the sum of values of n over all test cases does not exceed 105.
+
+Sample Input 1
+1
+3 1
+1 10
+2 4
+4 6
+
+Sample Output 1
+2
+
+Explanation
+There will be max of 2 passengers on the train at any time during the journey( From stop 2 to 4, there will be 2, again from stop 4 to 6, there will be 2 passengers on the train). 
+So, maximum number of bogies required will be 2.
+
+Sample Input 2
+1
+5 1
+3 5
+1 4
+1 9
+2 3
+4 10
+
+Sample Output 2
+3

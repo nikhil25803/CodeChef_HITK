@@ -1,0 +1,36 @@
+CHEFFIN TEMPERATURE 
+Problem Code: CTEMP
+
+Wizard wants to record the temperature of all her magical potions. 
+But they don’t measure temperature in the scales known to us. 
+Instead, they follow this secret formula :
+
+Temperature in Cheffin = (Temperature in Celsius/27) + ((Temperature in Fahrenheit − 23)/9) + (Temperature in Kelvin − 72)
+Temperature in Kelvin = Temperature in Celsius + 273
+Temperature in Fahrenheit = ((Temperature in Celsius)∗9)/5 + 32
+The thermometer which Wizard has brought from earth gives temperature in celsius. 
+Can you help Wizard calculate the temperature of all the potions in Cheffin?
+
+INPUT
+First line has a single integer T followed by T lines having 1 integer each.
+
+OUTPUT
+For each test case print the temperature in Cheffin ROUNDED to nearest integer.
+
+CONSTRAINTS
+1≤T≤105
+−106≤temperature≤106
+
+SAMPLE INPUT
+3
+40
+-40
+-737
+
+SAMPLE OUTPUT
+251 
+153
+-710
+
+EXPLANATION
+We are given 2 temperatures in celsius. So we convert it to Fahrenheit and kelvin using our knowledge and put it in the secret formula to get the answer in Cheffin.

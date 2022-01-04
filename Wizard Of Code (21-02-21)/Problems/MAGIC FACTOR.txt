@@ -1,0 +1,46 @@
+MAGIC FACTOR 
+Problem Code: MAGFACT
+
+
+You have your first-class test in your course “Magic 101”. 
+The test is obviously online due to the pandemic, but you decide to attempt the test honestly, unlike other students of your class. 
+The task is as follows.
+
+You are given a list of n words consisting of small English alphabet letters. 
+Every word has a value which is the sum of values of each letter of the word. (For eg: 'a'=1, 'b'=2, etc). 
+There is a new term called Magic factor for a pair of words. 
+The magic factor of 2 words having value v1 & v2 is = abs(v1−v2).
+
+Your task is, every time you encounter a word, you have to calculate its magic factor with the last word you encountered of the same length. 
+Finally, print the total sum of all magic factors calculated.
+
+Note that once you use some index for the magic factor calculation, you can't use that index again.
+
+Input
+The first line of each test case contains one integer n.
+Each of the following n lines contains one word. All the words consist of lowercase Latin letters.
+
+Output
+For each test case, Print x, the total sum of magic factors for each test case.
+
+Constraint
+1≤ n≤ 2∗105
+1≤ |s|≤ 2∗105
+
+It is guaranteed that the sum of the length of all words in each test case does not exceed 2∗105.
+
+Sample Input:
+5
+aa
+aaaa
+aaaaaa
+abcd
+zz
+
+Sample Output:
+56
+
+Sample Explanation
+The pairs for the calculation will be : [aa,zz],[aaaa,abcd]
+So, Total sum = |2−52|+|4−10|=56
+Note that aaaaa didn't match any other word.

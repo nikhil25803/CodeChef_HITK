@@ -1,0 +1,35 @@
+MAXIMUM PROPS 
+Problem Code: MXPS
+
+Merlin has got X Gold Galleons(A Wizarding Currency) on halloween to buy some props so that he can start his wizardry career. 
+He went on to the Zonko shop and asked for the price list of every item available. 
+He doesn't want to have more than one similar item but wants to have maximum number of items he can have. He bought maximum no. of props and returned home. 
+When he reaches home his sister Cass asks him the no. of props he bought so that they can share but he doesn't want to count so he asked you for help. 
+You have to print the no. of props Merlin bought at Zonko shop.
+
+Input
+First line contains T the no. of test cases
+Second line contains two space separated integers N and X where N is the no. of different props available in Zonko shop and X is the amount of Gold Galleon chef has with him.
+Third and the last line of each test case contain space separated N integers, price(i) which is the price of 1 quantity of ith prop.available in shop.
+
+Output
+Print a single integer which is the no. of prop bought.
+
+Constraints
+1≤T≤103
+1≤N≤106
+1≤X≤109
+1≤p(i)≤106
+
+Sum of N overall test cases doesn't exceed 106.
+
+Sample Input
+1   
+5 11
+1 2 3 4 5
+
+Sample Output
+4
+
+Explanation
+He can either buy the items of cost (1, 2, 3, 4) in which case he is left with 1 Galleon with which he can't buy anything now or cost (1, 2, 3, 5) after which he is left with no money.
