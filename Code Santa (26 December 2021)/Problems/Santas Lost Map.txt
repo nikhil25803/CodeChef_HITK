@@ -1,0 +1,68 @@
+Santas Lost Map
+
+Just like every Christmas, Santa is planning to deliver gifts for all the kids around the world.
+
+While searching for the coordinates of all the houses he needs to visit, Santa realized he has forgotten to get the coordinates of one city altogether!
+
+Now Santa is distressed. Cause all he has is a N×M grid A full of 0s and 1s where the 1s represent a block of a house and 0s are non-residential places. 
+Now, no two houses are four directionally adjacent meaning a group of adjacent 1s represents a single house only. 
+It is to be noted that all the houses in the grid are either square or rectangular in shape.
+
+Now, it's your job to find the coordinates. 
+In Santa’s coordinate system, a house can be represented such that the top left corner of the house is (x1,y1) and the bottom right corner is (x2,y2). 
+Each house should be represented like a 4 integer array i.e [x1,y1,x2,y2].
+
+Your work is to give him the number of houses you have found followed by the space-separated, 4 number coordinates of each of them, each printed in a new line. 
+The houses must be sorted row-wise by their top left corner.
+
+In case you didn't find any house on the map, print −1.
+
+Note: The input and output files are large, so use fast input-output methods.
+
+Input Format
+First line will contain T, the number of test cases. Then the test cases follow.
+The first line of each test case contains two integers N and M.
+The next N lines contain M space-separated integers representing the grid A.
+
+Output Format
+For each test case,
+
+The first line of output is the number of houses you have found.
+From the second line onwards, print the 4 integer array [x1,y1,x2,y2] of each house, each of them should be printed in a new line. 
+The houses must be sorted row-wise by their top left corner.
+Print −1 if you don't find any house on the map.
+
+Constraints
+1≤T≤1000
+1≤M,N≤1000
+0≤A[i]≤1
+
+It is guaranteed that the sum of values of M×N over all test cases does not exceed 106.
+
+All the houses are either square or rectangular in shape.
+
+Sample Input 1 
+3
+3 3
+1 0 0
+0 1 1
+0 1 1
+1 1
+0
+2 2
+1 1
+1 1
+
+Sample Output 1 
+2
+0 0 0 0
+1 1 2 2
+-1
+1
+0 0 1 1
+
+Explanation
+For the first test case, we can see that the number of houses on the grid is 2. 
+The first one starts at top left corner of the grid i.e (0,0) and ends at the same place itself. 
+Therefore the coordinates are [0,0,0,0]. For the second house, it starts from the coordinate (1,1) and ends at (2,2). 
+Hence the coordinates of the second house is [1,1,2,2]. Since (0,0) comes before (1,1) in row-wise traversal, so we print [0,0,0,0] before [1,1,2,2].

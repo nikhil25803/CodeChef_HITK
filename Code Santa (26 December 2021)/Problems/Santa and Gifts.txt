@@ -1,0 +1,55 @@
+Santa and Gifts 
+Problem Code: SGIFT
+
+
+Santa Claus monitors every child throughout the year and prepares a goodness level for each child. 
+There are N children in the city of Rovaniemi and the goodness level of each of them is given by an array A.
+
+Santa Claus decided to give the i th child B[i] coins. 
+He is very impartial so he should give the most number of coins to the child with the highest goodness level.
+
+More formally, if two children have the same goodness level, then they must receive the same number of coins. 
+If one of the children has a greater goodness level, then that child should receive more coins than the child with a lesser goodness level.
+
+Let K be the number of ways in which Santa can distribute the coins among the N children. 
+You need to print the value of K. Since K can be large, output K modulo (109+7).
+
+Also, print the array B such that the number of coins spent by Santa is maximum.
+
+Input Format
+The first line will contain T, the number of test cases. Then the test cases follow.
+The first line of each test case contains N.
+The following line contains N space-separated integers A1..N
+
+Output Format
+For each test case, output two lines.
+
+In the first line, output the value of K modulo (109+7).
+
+In the second line, output N integers denoting the array B such that the number of coins spent by Santa is maximum.
+
+Constraints
+1≤T≤103
+1≤N≤105
+1≤A[i]≤109
+1≤B[i]≤N
+
+It is guaranteed that the sum of values of N over all test cases does not exceed 106.
+
+Sample Input 1 
+2
+3
+1 2 3
+3
+5 5 5
+
+Sample Output 1 
+1
+1 2 3 
+3
+3 3 3 
+
+Explanation
+Test case 1: The only possible way in which Santa can distribute the coins is [1,2,3]. So, the total number of ways is 1.
+Test case 2: The possible ways in which Santa can distribute the coins are [1,1,1], [2,2,2] and [3,3,3]. 
+So, the total number of ways is 3. Of these, the distribution in which Santa spends the maximum number of coins is [3,3,3].

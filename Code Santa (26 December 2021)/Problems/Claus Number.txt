@@ -1,0 +1,41 @@
+Claus Number 
+Problem Code: CNUMBER
+
+It's Christmas time, so Santa Claus is coming to WonderLand to give gifts to children. 
+The city of WonderLand has a total of N children.
+
+A number is called Claus number if it obeys the following rules :
+
+The number of digits of the number must be even
+Alternating digits of the number must be the same
+Some examples of Claus numbers are 1212, 3333, 98989898 and 57.
+
+Santa Claus wants to carry K gifts such that K is a Claus number and the value of |N−K| is minimum, where |X| denotes the absolute value of X.
+
+Output the number of gifts that Santa Claus will carry.
+
+Note: The input and output files are large, so use fast input-output methods.
+
+Input Format
+The first line will contain T, the number of test cases. Then the test cases follow.
+Each test case contains a single line of input, one integer N.
+
+Output Format
+For each test case, output in a single line the number of gifts K that Santa Claus will carry.
+
+Constraints
+1≤T≤106
+1≤N≤1018
+
+Sample Input 1 
+4
+9
+96 
+672
+2143
+
+Sample Output 1 
+10
+96
+1010
+2121

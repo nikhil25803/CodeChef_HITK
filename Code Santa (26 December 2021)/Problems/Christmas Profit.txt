@@ -1,0 +1,42 @@
+Christmas Profit 
+Problem Code: CPROFITSolvedSubmit (Practice)
+
+Nicholas owns a shop that sells seasonal decor items. 
+The shop is in a posh locality so he has to pay a rent of X coins.
+
+This year, Nicholas bought N Christmas trees each for A[i] coins and was able to sell them for B[i] coins each.
+
+Print the NetProfit of Nicholas.
+
+The NetProfit is given by the TotalRevenue−TotalExpenses.
+
+Input Format
+The first line will contain T, the number of test cases. Then the test cases follow.
+The first line of each test case contains two integers N and X.
+The second line of each test case contains N space-separated integers A1..N
+The third line of each test case contains N space-separated integers B1..N
+
+Output Format
+For each test case, output in a single line the NetProfit of Nicholas.
+
+Constraints
+1≤T≤10
+1≤N≤103
+1≤X,A[i],B[i]≤100
+
+Sample Input 1 
+2
+5 10
+3 2 6 4 3
+4 5 11 3 9
+2 5
+4 5
+6 6
+
+Sample Output 1 
+4
+-2
+
+Explanation
+Test case 1: The TotalRevenue is 32 and the TotalExpenses is 28. So the NetProfit is 4.
+Test case 2: The TotalRevenue is 12 and the TotalExpenses is 14. So the NetProfit is -2.

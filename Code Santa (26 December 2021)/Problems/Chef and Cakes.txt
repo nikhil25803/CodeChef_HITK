@@ -1,0 +1,42 @@
+Chef and Cakes 
+Problem Code: CCAKESSolvedSubmit (Practice)
+
+This Christmas, Chef has an amazing idea he wants to distribute cakes in his locality. 
+But, being the choosy person he is , he only wants to distribute cakes of one specific flavour.
+
+In his locality, there is a cake shop that has N cakes arranged in an array A such that each flavour is represented a specific number. 
+For example, one such possible arrangement of array A is [1,1,3,2,2,2,4] , where each number represents a specific flavour.
+
+But at first, Chef wants to know which cake he should buy,so that he can reach maximum number of people. 
+Now, since he is a very busy person, he asked his best friend i.e you for help. You need to find out which flavour has the maximum number of cakes in the cake shop.
+
+Note: If there are multiple answers then print the flavour which is represented by the largest number among them.
+
+Input Format
+The first line will contain T, number of testcases. Then the testcases follow.
+The first line of each testcase will contain N - the length of the array A.
+The second line of each test case contains N space separated integers A1,A2,…,AN denoting the array A.
+
+Output Format
+For each testcase, output a single number representing the flavour that has maximum number of cakes in the cake shop.
+
+Constraints
+1≤T≤103
+1≤N≤105
+1≤A[i]≤109
+
+It is guaranteed that the sum of values of N over all test cases does not exceed 106
+
+Sample Input 1 
+3
+8 
+1 2 4 2 5 4 4 5
+7
+2 1 2 1 2 1 4
+6 
+1 2 4 3 3 3
+
+Sample Output 1 
+4
+2
+3
